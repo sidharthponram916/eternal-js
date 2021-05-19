@@ -1,5 +1,5 @@
 {
-  "name": "eternal-js",
+  "name": "eternal",
   "version": "1.0.3",
   "description": "A JSON Manipulation Tool for In-File Databases",
   "main": "eternal.js",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/VaderAI/Eternal-JSON/issues"
   },
-  "homepage": "https://github.com/VaderAI/Eternal-JSON#readme"
+  "homepage": "https://github.com/VaderAI/Eternal-JSON#readme",
+  "keywords": [
+    "json",
+    "database",
+    "tool"
+  ]
 }
