@@ -2,11 +2,13 @@
 This NPM Module is used to provide storage for small time projects. It is a tool that helps to use JSON files as a way of storage, so that you do not have to set up the process of a high time database for smaller projects such as MongoDB. 
 Just noting that it simulates a NoSQL database System rather than a SQL Database System.
 Example: 
+```
 {  
     name: `Smith`, 
     age: 59, 
     job: `Politician`, 
 }
+```
 # Setup Guide
 
 1. Install the Eternal Tool
