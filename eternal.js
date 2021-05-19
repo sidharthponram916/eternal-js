@@ -1,4 +1,3 @@
-const fetch = require('node-fetch'); 
 const fs = require('fs'); 
 const package = { 
     create: (a,s, callback) => { 
@@ -6,7 +5,9 @@ const package = {
         fs.writeFile(`data/${a}.json` , data , err => { 
           if (err) throw err; 
           else { 
+            if (callback && typeof callback === 'function') { 
               callback(); 
+             }
           }
         }) 
     }, 
@@ -17,7 +18,7 @@ const package = {
       let data = JSON.parse(fs.readFileSync(`data/${a}.json`, {encoding: 'utf8', flag: 'r'}))
          return data; 
    }, 
-   write: (a,obj, callback) => { 
+   update: (a,obj, callback) => { 
          obj = JSON.stringify(obj);      
         fs.writeFile(`data/${a}.json`,obj, err => { 
               if (callback && typeof callback === 'function') { 

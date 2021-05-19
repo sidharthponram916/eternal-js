@@ -1,16 +1,20 @@
 {
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1"
-  },
-  "name": "eternal",
-  "version": "1.0.0",
+  "name": "eternal-js",
+  "version": "1.0.1",
   "description": "Welcome to eternal JSON database tool",
   "main": "eternal.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sidharth Ponram",
-  "license": "ISC"
+  "author": "sidharth_ponram",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaderAI/Eternal-JSON.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VaderAI/Eternal-JSON/issues"
+  },
+  "homepage": "https://github.com/VaderAI/Eternal-JSON#readme"
 }
