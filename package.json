@@ -1,6 +1,6 @@
 {
-  "name": "eternal",
-  "version": "1.0.3",
+  "name": "eternal-js",
+  "version": "1.0.4",
   "description": "A JSON Manipulation Tool for In-File Databases",
   "main": "eternal.js",
   "devDependencies": {},
