@@ -3,7 +3,10 @@ const package = {
     create: (a,s, callback) => { 
              let data = JSON.stringify(s); 
         fs.writeFile(`data/${a}.json` , data , err => { 
-          if (err) throw err; 
+          if (err) { 
+              console.log(err); 
+              return null; 
+          }
           else { 
             if (callback && typeof callback === 'function') { 
               callback(); 
@@ -15,8 +18,16 @@ const package = {
        if (callback && typeof callback === 'function') { 
            callback(); 
        }
-      let data = JSON.parse(fs.readFileSync(`data/${a}.json`, {encoding: 'utf8', flag: 'r'}))
-         return data; 
+    try { 
+        return JSON.parse(fs.readFileSync(`data/${a}.json`, {encoding: 'utf8', flag: 'r'})); 
+    }
+    catch (err) { 
+        if (err.code === 'ENOENT') {
+               console.log('File not found!');
+          } else {
+               throw err;
+          }
+    }
    }, 
    update: (a,obj, callback) => { 
          obj = JSON.stringify(obj);      
