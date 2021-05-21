@@ -8,8 +8,8 @@ if (err) {
      return null; 
 }
  else { 
-      if (callback && typeof callback === 'function') { 
-          callback(); 
+        if (callback && typeof callback === 'function') { 
+            callback(); 
          }
      }
    }) 

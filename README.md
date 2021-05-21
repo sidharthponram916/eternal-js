@@ -38,7 +38,7 @@ Example:
          data.name = `George` 
          data.age = 49
          data.grade = 9
-   data.update('my_database', data); 
+   eternal.update('my_database', data); 
 ```
 5. More Syntax will be created soon! This is just a project under development, so hopefully you will start using these 3 methods :)
 
