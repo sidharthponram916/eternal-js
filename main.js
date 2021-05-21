@@ -1,19 +1,7 @@
 const fs = require('fs'); 
+const create = require('./scripts/create'); 
 const package = { 
-    create: (a,s, callback) => { 
-             let data = JSON.stringify(s); 
-        fs.writeFile(`data/${a}.json` , data , err => { 
-          if (err) { 
-              console.log(err); 
-              return null; 
-          }
-          else { 
-            if (callback && typeof callback === 'function') { 
-              callback(); 
-             }
-          }
-        }) 
-    }, 
+    create: create(), 
    read: (a,callback) => { 
        if (callback && typeof callback === 'function') { 
            callback(); 
