@@ -40,7 +40,13 @@ Example:
          data.grade = 9
    eternal.update('my_database', data); 
 ```
-5. More Syntax will be created soon! This is just a project under development, so hopefully you will start using these 3 methods :)
+```
+   //deleting your data is a breeze with the delete() method 
+      eternal.delete('my_database', () => { 
+           console.log('Data Deleted!')
+      })
+```
+5. I will update this project somewhat regularly. In the meantime, spread word about this npm package, and KEEP USING IT! IF you find it useful that is :). 
 
 6. Created by Sidharth Ponram. Check out my profile on GitHub!
 
