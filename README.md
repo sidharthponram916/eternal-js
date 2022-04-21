@@ -1,6 +1,7 @@
-# Eternal JSON TOOL
-This NPM Module is used to provide storage for small time projects. It is a tool that helps to use JSON files as a way of storage, so that you do not have to set up the process of a high time database for smaller projects such as MongoDB. 
-Just noting that it simulates a NoSQL database System rather than a SQL Database System.
+# Eternal.js: The ideal tool for JSON. 
+
+Eternal.js makes it easy to do CRUD operations on JSON files. Just make the data folder, and use the functions. It is as simple as that. 
+
 Example: 
 ```
 {  
@@ -48,5 +49,5 @@ Example:
 ```
 5. I will update this project somewhat regularly. In the meantime, spread word about this npm package, and KEEP USING IT! IF you find it useful that is :). 
 
-6. Created by Sidharth Ponram. Check out my profile on GitHub!
+6. Created by Sidharth Ponram. Check out my profile on GitHub! @sidharthponram916
 
